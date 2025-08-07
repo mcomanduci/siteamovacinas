@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amo Vacinas - Clínica de Vacinação Humanizada</title>
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- Icons: Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header
+      class="bg-white/80 backdrop-blur-lg shadow-sm fixed w-full top-0 z-50"
+      id="header"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-bold text-purple-600">
+          <!-- Amo<span class="text-pink-500">Vacinas</span> -->
+          <img
+            src="./img/logo.png"
+            alt=""
+            width="120"
+            class="max-w-[70px] sm:max-w-[100px]"
+          />
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="#clinica"
+            class="text-gray-600 hover:text-purple-600 transition-colors"
+            >A Clínica</a
+          >
+          <a
+            href="#servicos"
+            class="text-gray-600 hover:text-purple-600 transition-colors"
+            >Serviços</a
+          >
+          <a
+            href="#vacinas"
+            class="text-gray-600 hover:text-purple-600 transition-colors"
+            >Vacinas</a
+          >
+          <a
+            href="#depoimentos"
+            class="text-gray-600 hover:text-purple-600 transition-colors"
+            >Depoimentos</a
+          >
+        </div>
+        <a
+          href="#cta"
+          class="hidden md:block bg-purple-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-600 transition-transform transform hover:scale-105"
+        >
+          Agende Agora
+        </a>
+        <button id="mobile-menu-button" class="md:hidden">
+          <i data-lucide="menu" class="h-6 w-6 text-purple-600"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+        <a
+          href="#clinica"
+          class="block text-gray-600 hover:text-purple-600 transition-colors py-2"
+          >A Clínica</a
+        >
+        <a
+          href="#servicos"
+          class="block text-gray-600 hover:text-purple-600 transition-colors py-2"
+          >Serviços</a
+        >
+        <a
+          href="#vacinas"
+          class="block text-gray-600 hover:text-purple-600 transition-colors py-2"
+          >Vacinas</a
+        >
+        <a
+          href="#depoimentos"
+          class="block text-gray-600 hover:text-purple-600 transition-colors py-2"
+          >Depoimentos</a
+        >
+        <a
+          href="#cta"
+          class="block bg-purple-500 text-white text-center px-6 py-2 rounded-full font-semibold hover:bg-purple-600 transition-transform transform hover:scale-105 mt-2"
+        >
+          Agende Agora
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="relative overflow-hidden bg-purple-50 flex items-center h-screen"
+      >
+        <div
+          class="absolute inset-0 block bg-no-repeat bg-center bg-cover opacity-40 sm:opacity-50 lg:opacity-60 2xl:opacity-100"
+          style="background-image: url('./img/image.png')"
+        ></div>
+        <div class="container mx-auto px-4 sm:px-6 z-10 relative w-full">
+          <div class="flex flex-col lg:flex-row items-center">
+            <div
+              class="w-full lg:w-1/2 text-center lg:text-left bg-white/40 sm:backdrop-blur-sm p-6 sm:p-8 rounded-2xl"
+            >
+              <h1
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-purple-800 leading-tight mb-4 sm:mb-6"
+              >
+                Vacina sem medo e com
+                <span class="text-pink-500">muito amor!</span>
+              </h1>
+              <p
+                class="text-base sm:text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 mb-6 sm:mb-8 leading-relaxed"
+              >
+                Na Amo Vacinas em Governador Valadares, a vacinação é um momento
+                de carinho e tranquilidade. Conte com nossa equipe para uma
+                experiência segura e humanizada para quem você ama.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
+              >
+                <a
+                  href="#cta"
+                  class="bg-pink-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-pink-600 transition-transform transform hover:scale-105 shadow-lg text-center"
+                >
+                  Agendar uma Visita
+                </a>
+                <a
+                  href="#servicos"
+                  class="bg-white text-purple-600 px-6 sm:px-8 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-purple-100 transition-colors shadow-lg border border-purple-200 text-center"
+                >
+                  Nossos Serviços
+                </a>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- A Clínica Section -->
+      <section id="clinica" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+          <div
+            class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-20"
+          >
+            <!-- Text Content (moved first for mobile) -->
+            <div class="w-full lg:w-1/2 text-left order-1 lg:order-2">
+              <h2
+                class="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-800 mb-4 sm:mb-6"
+              >
+                Bem-vindo à Amo<span class="text-pink-500">Vacinas</span>
+              </h2>
+              <p
+                class="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
+              >
+                Na Amo Vacinas, nossa missão é proteger o que há de mais
+                valioso: a sua saúde e a de sua família. Oferecemos um serviço
+                de vacinação completo e personalizado, com a comodidade do
+                atendimento domiciliar e a segurança de uma equipe altamente
+                qualificada.
+              </p>
+              <p
+                class="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed"
+              >
+                Entendemos que a vacinação pode ser um momento de ansiedade, por
+                isso, criamos um ambiente e um serviço que priorizam o conforto
+                e o bem-estar, utilizando técnicas e produtos que aliviam a dor
+                e o desconforto. Além das vacinas, oferecemos uma gama de
+                serviços pensados para facilitar sua rotina de cuidados.
+              </p>
+            </div>
+            <!-- Image Carousel (moved second for mobile) -->
+            <div class="w-full lg:w-1/2 order-2 lg:order-1">
+              <div
+                class="relative w-full max-w-2xl mx-auto"
+                id="clinic-carousel"
+              >
+                <div
+                  class="overflow-hidden relative h-48 sm:h-64 md:h-80 lg:h-96 rounded-2xl shadow-2xl bg-gray-200"
+                >
+                  <!-- Carousel items -->
+                  <div class="carousel-item absolute inset-0">
+                    <img
+                      src="./img/clinica.jpg"
+                      alt="Interior de uma clínica pediátrica moderna e acolhedora"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div class="carousel-item absolute inset-0 opacity-0">
+                    <img
+                      src="./img/clinica2.jpg"
+                      alt="Recepção da clínica, limpa e organizada"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div class="carousel-item absolute inset-0 opacity-0">
+                    <img
+                      src="./img/clinica3.jpg"
+                      alt="Enfermeira aplicando vacina em uma criança de forma gentil"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <!-- Prev/Next buttons -->
+                <button
+                  id="prevBtn"
+                  class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 text-purple-700 p-2 sm:p-3 rounded-full shadow-md ml-1 sm:ml-2 transition-all"
+                >
+                  <i
+                    data-lucide="chevron-left"
+                    class="h-4 w-4 sm:h-6 sm:w-6"
+                  ></i>
+                </button>
+                <button
+                  id="nextBtn"
+                  class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 text-purple-700 p-2 sm:p-3 rounded-full shadow-md mr-1 sm:mr-2 transition-all"
+                >
+                  <i
+                    data-lucide="chevron-right"
+                    class="h-4 w-4 sm:h-6 sm:w-6"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="equipe" class="py-20 bg-purple-50">
+        <div class="container mx-auto px-6">
+          <div
+            class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20"
+          >
+            <div class="lg:w-1/2">
+              <img
+                src="https://images.pexels.com/photos/7659873/pexels-photo-7659873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Foto da equipe da clínica sorrindo"
+                class="rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
+            <div class="lg:w-1/2">
+              <h2 class="text-3xl font-bold text-purple-800 mb-4">
+                Nossa Equipe Especializada
+              </h2>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Nossa equipe é o coração da Amo Vacinas. Formada por enfermeiros
+                e técnicos de enfermagem altamente qualificados e com vasta
+                experiência em imunização, estamos preparados para oferecer um
+                atendimento seguro, eficiente e, acima de tudo, humano.
+              </p>
+              <p class="text-gray-600 leading-relaxed">
+                Cada profissional é treinado para lidar com todos os públicos,
+                desde recém-nascidos até idosos, sempre com foco em tornar a
+                experiência da vacinação a mais tranquila e confortável
+                possível. Acreditamos que um sorriso e uma abordagem gentil
+                fazem toda a diferença.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="equipe" class="py-12 lg:py-20 bg-purple-50">
+        <div class="container mx-auto px-6">
+          <div
+            class="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20"
+          >
+            <div class="lg:w-1/2">
+              <img
+                src="https://images.pexels.com/photos/7659873/pexels-photo-7659873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Profissional de saúde sorrindo para um paciente"
+                class="rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
+            <div class="lg:w-1/2">
+              <div class="grid grid-cols-1 gap-x-6 gap-y-8">
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 text-purple-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      Profissionais Qualificados
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      Equipe formada por enfermeiros e técnicos com vasta
+                      experiência em imunização.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 text-purple-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      Atendimento Humanizado
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      Cuidado, empatia e um sorriso que transforma a experiência
+                      de vacinar.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 text-purple-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944A12.02 12.02 0 0012 21a12.02 12.02 0 009-14.056z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      Conforto e Segurança
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      Focamos em tornar a vacinação um momento tranquilo e
+                      totalmente seguro para você.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços Section -->
+      <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl font-bold text-purple-800 mb-12">
+            Nossos Serviços
+          </h2>
+          <!-- teste -->
+          <div class="block md:hidden">
+            <div class="keen-slider-container relative">
+              <div id="slider-produtos" class="keen-slider">
+                <!-- Service Cards are injected here by JS -->
+              </div>
+
+              <div class="flex items-center justify-center gap-4 mt-8">
+                <button
+                  id="slider-produtos-prev"
+                  class="flex items-center justify-center w-12 h-12 bg-purple-100 hover:bg-purple-200 text-purple-600 rounded-full transition-colors duration-200"
+                  aria-label="Slide anterior"
+                >
+                  <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                </button>
+
+                <div class="flex items-center gap-2">
+                  <span
+                    id="slider-produtos-active"
+                    class="text-purple-600 font-semibold"
+                    >1</span
+                  >
+                  <span class="text-gray-400">/</span>
+                  <span id="slider-produtos-count" class="text-gray-400"
+                    >6</span
+                  >
+                </div>
+
+                <button
+                  id="slider-produtos-next"
+                  class="flex items-center justify-center w-12 h-12 bg-purple-100 hover:bg-purple-200 text-purple-600 rounded-full transition-colors duration-200"
+                  aria-label="Próximo slide"
+                >
+                  <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- fim teste -->
+          <!-- Carousel for Mobile -->
+          <!-- <div id="servicos-carousel" class="md:hidden">
+            <div class="overflow-hidden relative">
+              <div
+                id="servicos-slider"
+                class="flex transition-transform duration-300 ease-in-out"
+              >
+                
+              </div>
+            </div>
+            <div
+              class="flex justify-center mt-4 space-x-2"
+              id="servicos-indicators"
+            >
+              
+            </div>
+          </div> -->
+          <!-- Grid for Desktop -->
+          <div
+            id="servicos-grid"
+            class="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <!-- Grid items are injected here by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Vacinas Disponíveis Section -->
+      <!-- <section id="vacinas" class="py-12 sm:py-16 lg:py-20 bg-purple-50">
+        <div class="container mx-auto px-4 sm:px-6">
+          <div class="text-center">
+            <h2
+              class="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-800 mb-4 sm:mb-6"
+            >
+              Vacinas Para Todas as Fases da Vida
+            </h2>
+            <p
+              class="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed"
+            >
+              Temos todas as vacinas recomendadas pelas sociedades de pediatria
+              e imunização. Confira os calendários:
+            </p>
+          </div>
+
+
+          <div
+            class="mb-6 sm:mb-8 flex flex-wrap justify-center gap-2 sm:gap-4"
+          >
+            <button
+              class="tab-button tab-active text-sm sm:text-base px-3 py-2 sm:px-4 sm:py-2"
+              data-tab="crianca"
+            >
+              Criança
+            </button>
+            <button
+              class="tab-button text-sm sm:text-base px-3 py-2 sm:px-4 sm:py-2"
+              data-tab="adolescente"
+            >
+              Adolescente
+            </button>
+            <button
+              class="tab-button text-sm sm:text-base px-3 py-2 sm:px-4 sm:py-2"
+              data-tab="adulto"
+            >
+              Adulto
+            </button>
+            <button
+              class="tab-button text-sm sm:text-base px-3 py-2 sm:px-4 sm:py-2"
+              data-tab="idoso"
+            >
+              Idoso
+            </button>
+            <button
+              class="tab-button text-sm sm:text-base px-3 py-2 sm:px-4 sm:py-2"
+              data-tab="gestante"
+            >
+              Gestante
+            </button>
+          </div>
+
+
+          <div
+            class="bg-white rounded-2xl shadow-lg min-h-[500px] md:min-h-[320px] relative"
+          >
+            <div id="crianca" class="tab-content p-4 sm:p-6">
+              <div
+                class="absolute inset-0 pointer-events-none bg-no-repeat bg-right-bottom opacity-20 lg:opacity-70 bg-[length:auto_80%] rounded-lg"
+                style="background-image: url('./img/urso2.png')"
+              ></div>
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-purple-700 mb-4 sm:mb-6 relative z-20"
+              >
+                Calendário Infantil (0 a 9 anos)
+              </h3>
+              <ul
+                class="space-y-2 sm:space-y-3 lg:space-y-4 text-gray-700 relative z-20"
+              >
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">Ao Nascer:</strong> BCG,
+                  Hepatite B
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">2, 4, 6 Meses:</strong>
+                  Hexavalente/Pentavalente, Pneumocócica 15V, Rotavírus
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">3, 5 Meses:</strong>
+                  Meningocócica ACWY, Meningocócica B
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">9 Meses:</strong> Febre Amarela
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">12 Meses:</strong> Ref.
+                  Pneumocócica, Hepatite A, Tríplice Viral, Varicela
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">15 Meses:</strong> Ref.
+                  Pentavalente, Ref. Tríplice Viral, Ref. Varicela
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">4-6 Anos:</strong> dTpa + IPV,
+                  Ref. Meningocócica ACWY, Dengue
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">9 Anos:</strong> HPV
+                </li>
+              </ul>
+            </div>
+            <div id="adolescente" class="tab-content hidden p-4 sm:p-6">
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-purple-700 mb-4 sm:mb-6"
+              >
+                Calendário do Adolescente (10 a 19 anos)
+              </h3>
+              <ul class="space-y-2 sm:space-y-3 lg:space-y-4 text-gray-700">
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">Rotina:</strong> HPV, dTpa
+                  (reforço a cada 10 anos), Influenza (anual), Meningocócica
+                  ACWY, Meningocócica B.
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">Recomendadas:</strong> Tríplice
+                  Viral, Varicela, Hepatite A e B, Febre Amarela, Dengue.
+                </li>
+              </ul>
+            </div>
+            <div id="adulto" class="tab-content hidden p-4 sm:p-6">
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-purple-700 mb-4 sm:mb-6"
+              >
+                Calendário do Adulto (20 a 59 anos)
+              </h3>
+              <ul class="space-y-2 sm:space-y-3 lg:space-y-4 text-gray-700">
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">Rotina:</strong> dTpa (reforço a
+                  cada 10 anos), Influenza (anual), Herpes Zoster (a partir de
+                  50 anos).
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600"
+                    >Recomendadas (avaliar cartão):</strong
+                  >
+                  Tríplice Viral, Hepatite A e B, HPV, Varicela, Meningocócica
+                  ACWY e B, Febre Amarela, Dengue, Pneumocócica 15V.
+                </li>
+              </ul>
+            </div>
+            <div id="idoso" class="tab-content hidden p-4 sm:p-6">
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-purple-700 mb-4 sm:mb-6"
+              >
+                Calendário do Idoso (60+ anos)
+              </h3>
+              <ul class="space-y-2 sm:space-y-3 lg:space-y-4 text-gray-700">
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">Rotina:</strong> Influenza
+                  (Efluelda), dTpa (reforço a cada 10 anos), Herpes Zoster,
+                  Pneumocócicas (VPC15 e VPP23).
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600"
+                    >Recomendadas (situações especiais):</strong
+                  >
+                  Hepatite A e B, Meningocócica ACWY, Tríplice Viral.
+                </li>
+              </ul>
+            </div>
+            <div id="gestante" class="tab-content hidden p-4 sm:p-6">
+              <h3
+                class="text-lg sm:text-xl lg:text-2xl font-bold text-purple-700 mb-4 sm:mb-6"
+              >
+                Calendário da Gestante
+              </h3>
+              <ul class="space-y-2 sm:space-y-3 lg:space-y-4 text-gray-700">
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">Rotina:</strong> dTpa (a partir
+                  da 20ª semana), Influenza, Hepatite B (se não imunizada).
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">Contraindicadas:</strong>
+                  Tríplice Viral, HPV, Varicela, Dengue.
+                </li>
+                <li class="text-sm sm:text-base">
+                  <strong class="text-pink-600">Situações Especiais:</strong>
+                  Hepatite A, Pneumocócicas, Meningocócicas, Febre Amarela
+                  (avaliar risco/benefício).
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-2 mx-auto max-w-2xl text-center">
+            <p>
+              Veja as vacinas disponíveis
+              <a
+                href="./img/vacinas-disponiveis.jpg"
+                target="_blank"
+                class="text-purple-600 hover:underline"
+                >aqui</a
+              >
+            </p>
+          </div>
+
+          <div
+            class="mt-12 bg-purple-500 text-white p-8 rounded-2xl text-center shadow-lg md:w-1/2 mx-auto"
+          >
+            <h3 class="text-2xl font-bold mb-2">
+              Planos Programados de Vacinação
+            </h3>
+            <p>
+              Conheça nossos planos como o PPV Cuidadoso, VIP Plus e Mais Amor
+              Sênior. Garanta benefícios como vacinas reservadas, parcelamento
+              facilitado e a certeza de manter o calendário vacinal sempre em
+              dia.
+            </p>
+          </div>
+        </div>
+      </section> -->
+
+      <section
+        id="vacinas"
+        class="py-12 sm:py-16 lg:py-20 bg-purple-50 relative"
+      >
+        <div
+          class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-50"
+          style="background-image: url('./img/clouds.png')"
+        ></div>
+        <!-- <div class="relative z-10"></div> -->
+        <div class="container mx-auto px-4 sm:px-6 relative z-20">
+          <div class="text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-purple-800 mb-4">
+              Vacinas Para Todas as Fases da Vida
+            </h2>
+            <p
+              class="text-base lg:text-lg text-gray-600 max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed"
+            >
+              Proteção completa para toda a família. Trabalhamos com os
+              calendários vacinais mais atualizados, recomendados pela Sociedade
+              Brasileira de Pediatria (SBP) e de Imunizações (SBIm).
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-3">
+            <div class="accordion-item rounded-xl shadow-md overflow-hidden">
+              <div
+                class="accordion-header flex justify-between items-center p-4 sm:p-5 cursor-pointer hover:bg-gray-50 bg-white"
+              >
+                <h3 class="text-lg sm:text-xl font-bold text-purple-700">
+                  Criança (0 a 9 anos)
+                </h3>
+                <svg
+                  class="accordion-icon h-6 w-6 text-purple-600 transition-transform duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content transition-all duration-500 ease-in-out bg-purple-50 relative"
+                style="max-height: 0"
+              >
+                <div
+                  class="absolute inset-0 pointer-events-none bg-no-repeat bg-right-bottom opacity-20 lg:opacity-40 bg-[length:auto_80%] rounded-lg"
+                  style="background-image: url('./img/urso21.png')"
+                ></div>
+                <div class="p-4 sm:p-6 border-t border-gray-200 relative z-20">
+                  <ul class="space-y-3 text-gray-700 sm:columns-2 sm:gap-x-8">
+                    <li class="break-inside-avoid">
+                      <strong class="font-semibold text-pink-600"
+                        >Ao Nascer:</strong
+                      >
+                      BCG, Hepatite B
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >2, 4, 6 Meses:</strong
+                      >
+                      Hexavalente/Pentavalente, Pneumocócica 15V, Rotavírus
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >3, 5 Meses:</strong
+                      >
+                      Meningocócica ACWY, Meningocócica B
+                    </li>
+                    <li class="break-inside-avoid">
+                      <strong class="font-semibold text-pink-600"
+                        >9 Meses:</strong
+                      >
+                      Febre Amarela
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >12 Meses:</strong
+                      >
+                      Ref. Pneumocócica, Hepatite A, Tríplice Viral, Varicela
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >15 Meses:</strong
+                      >
+                      Ref. Pentavalente, Ref. Tríplice Viral, Ref. Varicela
+                    </li>
+                    <li class="break-inside-avoid">
+                      <strong class="font-semibold text-pink-600"
+                        >4-6 Anos:</strong
+                      >
+                      dTpa + IPV, Ref. Meningocócica ACWY, Dengue
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >9 Anos:</strong
+                      >
+                      HPV
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item bg-white rounded-xl shadow-md overflow-hidden"
+            >
+              <div
+                class="accordion-header flex justify-between items-center p-4 sm:p-5 cursor-pointer hover:bg-gray-50"
+              >
+                <h3 class="text-lg sm:text-xl font-bold text-purple-700">
+                  Adolescente (10 a 19 anos)
+                </h3>
+                <svg
+                  class="accordion-icon h-6 w-6 text-purple-600 transition-transform duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content transition-all duration-500 ease-in-out"
+                style="max-height: 0"
+              >
+                <div class="p-4 sm:p-6 border-t border-gray-200">
+                  <ul class="space-y-3 text-gray-700">
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Rotina:</strong
+                      >
+                      HPV, dTpa (reforço a cada 10 anos), Influenza (anual),
+                      Meningocócica ACWY, Meningocócica B.
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Recomendadas:</strong
+                      >
+                      Tríplice Viral, Varicela, Hepatite A e B, Febre Amarela,
+                      Dengue.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item bg-white rounded-xl shadow-md overflow-hidden"
+            >
+              <div
+                class="accordion-header flex justify-between items-center p-4 sm:p-5 cursor-pointer hover:bg-gray-50"
+              >
+                <h3 class="text-lg sm:text-xl font-bold text-purple-700">
+                  Adulto (20 a 59 anos)
+                </h3>
+                <svg
+                  class="accordion-icon h-6 w-6 text-purple-600 transition-transform duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content transition-all duration-500 ease-in-out"
+                style="max-height: 0"
+              >
+                <div class="p-4 sm:p-6 border-t border-gray-200">
+                  <ul class="space-y-3 text-gray-700">
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Rotina:</strong
+                      >
+                      dTpa (reforço a cada 10 anos), Influenza (anual), Herpes
+                      Zoster (a partir de 50 anos).
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Recomendadas (avaliar cartão):</strong
+                      >
+                      Tríplice Viral, Hepatite A e B, HPV, Varicela,
+                      Meningocócica ACWY e B, Febre Amarela, Dengue,
+                      Pneumocócica 15V.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item bg-white rounded-xl shadow-md overflow-hidden"
+            >
+              <div
+                class="accordion-header flex justify-between items-center p-4 sm:p-5 cursor-pointer hover:bg-gray-50"
+              >
+                <h3 class="text-lg sm:text-xl font-bold text-purple-700">
+                  Idoso (60+ anos)
+                </h3>
+                <svg
+                  class="accordion-icon h-6 w-6 text-purple-600 transition-transform duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content transition-all duration-500 ease-in-out"
+                style="max-height: 0"
+              >
+                <div class="p-4 sm:p-6 border-t border-gray-200">
+                  <ul class="space-y-3 text-gray-700">
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Rotina:</strong
+                      >
+                      Influenza (Efluelda), dTpa (reforço a cada 10 anos),
+                      Herpes Zoster, Pneumocócicas (VPC15 e VPP23).
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Recomendadas (situações especiais):</strong
+                      >
+                      Hepatite A e B, Meningocócica ACWY, Tríplice Viral.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="accordion-item bg-white rounded-xl shadow-md overflow-hidden"
+            >
+              <div
+                class="accordion-header flex justify-between items-center p-4 sm:p-5 cursor-pointer hover:bg-gray-50"
+              >
+                <h3 class="text-lg sm:text-xl font-bold text-purple-700">
+                  Gestante
+                </h3>
+                <svg
+                  class="accordion-icon h-6 w-6 text-purple-600 transition-transform duration-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content transition-all duration-500 ease-in-out"
+                style="max-height: 0"
+              >
+                <div class="p-4 sm:p-6 border-t border-gray-200">
+                  <ul class="space-y-3 text-gray-700">
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Rotina:</strong
+                      >
+                      dTpa (a partir da 20ª semana), Influenza, Hepatite B (se
+                      não imunizada).
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Contraindicadas:</strong
+                      >
+                      Tríplice Viral, HPV, Varicela, Dengue.
+                    </li>
+                    <li>
+                      <strong class="font-semibold text-pink-600"
+                        >Situações Especiais:</strong
+                      >
+                      Hepatite A, Pneumocócicas, Meningocócicas, Febre Amarela
+                      (avaliar risco/benefício).
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 sm:mt-16 text-center">
+            <div
+              class="bg-white p-6 sm:p-8 rounded-2xl max-w-2xl mx-auto shadow-lg border border-purple-100"
+            >
+              <h3 class="text-xl sm:text-2xl font-bold text-purple-800 mb-3">
+                Planos de Vacinação e Pacotes
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Garanta a proteção completa com nossos planos programados.
+                Oferecemos condições especiais e a tranquilidade de manter o
+                calendário vacinal sempre em dia.
+              </p>
+              <a
+                href="#contato"
+                class="inline-block bg-pink-600 text-white font-bold text-base px-8 py-3 rounded-full hover:bg-pink-700 transition-colors shadow-md"
+              >
+                Conheça Nossos Planos
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Depoimentos Section -->
+      <section id="depoimentos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-purple-800 mb-12">
+              O Que Nossos Clientes Dizem
+            </h2>
+          </div>
+
+          <!-- Keen Slider de Depoimentos -->
+          <div class="mt-2">
+            <div id="keen-slider" class="keen-slider pb-5">
+              <!-- Os slides serão inseridos via JavaScript -->
+            </div>
+
+            <!-- Controles de Navegação -->
+            <div class="flex items-center justify-center gap-4 mt-8">
+              <button
+                id="keen-slider-previous"
+                class="flex items-center justify-center w-12 h-12 bg-purple-100 hover:bg-purple-200 text-purple-600 rounded-full transition-colors duration-200"
+                aria-label="Slide anterior"
+              >
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+              </button>
+
+              <div class="flex items-center gap-2">
+                <span
+                  id="keen-slider-active"
+                  class="text-purple-600 font-semibold"
+                  >1</span
+                >
+                <span class="text-gray-400">/</span>
+                <span id="keen-slider-count" class="text-gray-400">6</span>
+              </div>
+
+              <button
+                id="keen-slider-next"
+                class="flex items-center justify-center w-12 h-12 bg-purple-100 hover:bg-purple-200 text-purple-600 rounded-full transition-colors duration-200"
+                aria-label="Próximo slide"
+              >
+                <i data-lucide="chevron-right" class="w-6 h-6"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section id="cta" class="py-12 sm:py-16 lg:py-20 bg-black relative">
+        <div
+          class="absolute inset-0 block bg-no-repeat bg-bottom bg-cover opacity-40"
+          style="background-image: url('./img/ursa.png')"
+        ></div>
+        <div
+          class="container mx-auto px-4 sm:px-6 text-center text-white relative"
+        >
+          <h2
+            class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 sm:mb-6"
+          >
+            Proteja quem você ama.
+          </h2>
+          <p
+            class="text-sm sm:text-base lg:text-lg text-purple-200 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed"
+          >
+            É simples, rápido e seguro. Entre em contato conosco para montar um
+            plano de vacinação personalizado para sua família ou agende seu
+            atendimento domiciliar hoje mesmo.
+          </p>
+          <a
+            href="#"
+            class="bg-white text-purple-600 px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-purple-100 transition-transform transform hover:scale-105 shadow-2xl inline-block"
+          >
+            Fale com um Especialista
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300">
+      <div class="container mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+        >
+          <!-- About -->
+          <div class="col-span-1 sm:col-span-2 lg:col-span-2">
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">
+              Amo<span class="text-pink-500">Vacinas</span>
+            </h3>
+            <p class="text-gray-400 text-sm sm:text-base leading-relaxed">
+              Cuidado e proteção para todas as fases da vida, com atendimento
+              humanizado e especializado. Em casa, na escola ou na empresa.
+            </p>
+          </div>
+          <!-- Links -->
+          <div>
+            <h3
+              class="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4"
+            >
+              Links Rápidos
+            </h3>
+            <ul class="space-y-1 sm:space-y-2">
+              <li>
+                <a
+                  href="#clinica"
+                  class="hover:text-pink-400 transition-colors text-sm sm:text-base"
+                  >A Clínica</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#servicos"
+                  class="hover:text-pink-400 transition-colors text-sm sm:text-base"
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#vacinas"
+                  class="hover:text-pink-400 transition-colors text-sm sm:text-base"
+                  >Vacinas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#cta"
+                  class="hover:text-pink-400 transition-colors text-sm sm:text-base"
+                  >Agendamento</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Contact -->
+          <div>
+            <h3
+              class="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4"
+            >
+              Contato
+            </h3>
+            <ul class="space-y-1 sm:space-y-2 text-gray-400">
+              <li class="flex items-center text-sm sm:text-base">
+                <i
+                  data-lucide="phone"
+                  class="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-pink-400"
+                ></i>
+                (XX) 9XXXX-XXXX
+              </li>
+              <li class="flex items-center text-sm sm:text-base">
+                <i
+                  data-lucide="mail"
+                  class="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-pink-400"
+                ></i>
+                contato@amovacinas.com.br
+              </li>
+              <li class="flex items-center text-sm sm:text-base">
+                <i
+                  data-lucide="map-pin"
+                  class="w-3 h-3 sm:w-4 sm:h-4 mr-2 text-pink-400"
+                ></i>
+                Atendimento Domiciliar
+              </li>
+            </ul>
+            <div class="flex space-x-3 sm:space-x-4 mt-3 sm:mt-4">
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i data-lucide="instagram"></i
+              ></a>
+              <a href="#" class="text-gray-400 hover:text-white"
+                ><i data-lucide="facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-8 sm:mt-12 border-t border-gray-700 pt-4 sm:pt-6 text-center text-xs sm:text-sm text-gray-500"
+        >
+          <p>
+            &copy; 2024 AmoVacinas. Todos os direitos reservados. Acesse nosso
+            site: www.amovacinas.com.br
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="imageModal"
+      class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 backdrop-blur-sm"
+    >
+      <div class="relative w-full h-full flex items-center justify-center">
+        <!-- Close Button -->
+        <button
+          id="closeModalBtn"
+          class="absolute top-4 right-4 text-purple-500 text-3xl bg-white/70 font-bold z-10 rounded-full p-2 sm:p-3 hover:bg-white/50 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4 sm:w-6 sm:h-6 text-violet-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 6l12 12M6 18L18 6"
+            />
+          </svg>
+        </button>
+
+        <!-- Carousel Buttons -->
+        <!-- <button
+          id="modalPrevBtn"
+          class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full z-10"
+        >
+          ‹
+        </button> -->
+        <button
+          id="modalPrevBtn"
+          class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 hover:bg-white rounded-full p-2 sm:p-3 transition z-10"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4 sm:w-6 sm:h-6 text-violet-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+        <button
+          id="modalNextBtn"
+          class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 hover:bg-white rounded-full z-10 p-2 sm:p-3 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4 sm:w-6 sm:h-6 text-violet-600"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+
+        <!-- Image Carousel -->
+        <div
+          class="relative max-w-5xl w-full h-full flex items-center justify-center px-4"
+        >
+          <img
+            id="modalImage"
+            src=""
+            alt="Imagem ampliada"
+            class="max-h-[90vh] max-w-full object-contain rounded-lg shadow-lg transition-all duration-300"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js" defer></script>
+    <script src="./src/keen-slider.js" defer></script>
+    <script src="./src/keen-slider-products.js" defer></script>
+    <script src="./src/keen-slider-init.js" defer></script>
+  </body>
+</html>
