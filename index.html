@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/css/output.css" />
     <!-- Icons: Lucide -->
     <script src="https://unpkg.com/lucide@latest"></script>
   </head>
@@ -28,6 +28,7 @@
         <a href="#" class="text-2xl font-bold text-purple-600">
           <!-- Amo<span class="text-pink-500">Vacinas</span> -->
           <img
+            loading="lazy"
             src="./img/logo.png"
             alt=""
             width="120"
@@ -191,6 +192,7 @@
                   <!-- Carousel items -->
                   <div class="carousel-item absolute inset-0">
                     <img
+                      loading="lazy"
                       src="./img/clinica.jpg"
                       alt="Interior de uma clínica pediátrica moderna e acolhedora"
                       class="w-full h-full object-cover"
@@ -198,6 +200,7 @@
                   </div>
                   <div class="carousel-item absolute inset-0 opacity-0">
                     <img
+                      loading="lazy"
                       src="./img/clinica2.jpg"
                       alt="Recepção da clínica, limpa e organizada"
                       class="w-full h-full object-cover"
@@ -205,6 +208,7 @@
                   </div>
                   <div class="carousel-item absolute inset-0 opacity-0">
                     <img
+                      loading="lazy"
                       src="./img/clinica3.jpg"
                       alt="Enfermeira aplicando vacina em uma criança de forma gentil"
                       class="w-full h-full object-cover"
@@ -418,23 +422,7 @@
             </div>
           </div>
           <!-- fim teste -->
-          <!-- Carousel for Mobile -->
-          <!-- <div id="servicos-carousel" class="md:hidden">
-            <div class="overflow-hidden relative">
-              <div
-                id="servicos-slider"
-                class="flex transition-transform duration-300 ease-in-out"
-              >
-                
-              </div>
-            </div>
-            <div
-              class="flex justify-center mt-4 space-x-2"
-              id="servicos-indicators"
-            >
-              
-            </div>
-          </div> -->
+          <!-- Carousel for Mobile (Keen Slider) -->
           <!-- Grid for Desktop -->
           <div
             id="servicos-grid"
@@ -1262,9 +1250,9 @@
       </div>
     </div>
 
-    <script src="./script.js" defer></script>
-    <script src="./src/keen-slider.js" defer></script>
-    <script src="./src/keen-slider-products.js" defer></script>
-    <script src="./src/keen-slider-init.js" defer></script>
+    <!-- Keen core library -->
+    <script src="./src/js/keen-slider.js" defer></script>
+    <!-- App entry (ES modules) -->
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
