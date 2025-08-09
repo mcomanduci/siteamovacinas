@@ -38,9 +38,11 @@ function initClinicCarousel() {
   }
   function startAutoPlay() {
     autoPlayInterval = setInterval(nextSlide, 5000);
+    console.log("AutoPlay started");
   }
   function stopAutoPlay() {
     clearInterval(autoPlayInterval);
+    console.log("AutoPlay stopped");
   }
 
   nextBtn?.addEventListener("click", () => {
@@ -57,6 +59,59 @@ function initClinicCarousel() {
 
   showSlide(currentIndex);
   startAutoPlay();
+
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  const closeModalBtn = document.getElementById("closeModalBtn");
+  const modalPrevBtn = document.getElementById("modalPrevBtn");
+  const modalNextBtn = document.getElementById("modalNextBtn");
+  const carouselImages = Array.from(
+    document.querySelectorAll("#clinic-carousel img")
+  );
+  if (!modal || !modalImage || !closeModalBtn || !modalPrevBtn || !modalNextBtn)
+    return;
+
+  function openModal(index) {
+    updateModalImage(index);
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal() {
+    modal.classList.add("hidden");
+    modalImage.src = "";
+    document.body.style.overflow = "";
+  }
+  function updateModalImage() {
+    const image = carouselImages[currentIndex];
+    modalImage.src = image.src;
+    modalImage.alt = image.alt;
+  }
+  function showNextImage() {
+    currentIndex = (currentIndex + 1) % carouselImages.length;
+    updateModalImage();
+  }
+  function showPrevImage() {
+    currentIndex =
+      (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+    updateModalImage();
+  }
+
+  carouselImages.forEach((img, index) => {
+    img.addEventListener("click", () => openModal(index));
+  });
+  closeModalBtn.addEventListener("click", closeModal);
+  modalPrevBtn.addEventListener("click", showPrevImage);
+  modalNextBtn.addEventListener("click", showNextImage);
+  window.addEventListener("keydown", (e) => {
+    if (!modal.classList.contains("hidden")) {
+      if (e.key === "Escape") closeModal();
+      if (e.key === "ArrowRight") showNextImage();
+      if (e.key === "ArrowLeft") showPrevImage();
+    }
+  });
+  modal.addEventListener("click", (e) => {
+    if (e.target === modalImage.parentElement) closeModal();
+  });
 }
 
 function initTabs() {
@@ -117,63 +172,6 @@ function populateTestimonials() {
   window.dispatchEvent(new CustomEvent("testimonialsLoaded"));
 }
 
-function initModalGallery() {
-  const modal = document.getElementById("imageModal");
-  const modalImage = document.getElementById("modalImage");
-  const closeModalBtn = document.getElementById("closeModalBtn");
-  const modalPrevBtn = document.getElementById("modalPrevBtn");
-  const modalNextBtn = document.getElementById("modalNextBtn");
-  const carouselImages = Array.from(
-    document.querySelectorAll("#clinic-carousel img")
-  );
-  if (!modal || !modalImage || !closeModalBtn || !modalPrevBtn || !modalNextBtn)
-    return;
-
-  let currentIndex = 0;
-  function openModal(index) {
-    currentIndex = index;
-    updateModalImage();
-    modal.classList.remove("hidden");
-    document.body.style.overflow = "hidden";
-  }
-  function closeModal() {
-    modal.classList.add("hidden");
-    modalImage.src = "";
-    document.body.style.overflow = "";
-  }
-  function updateModalImage() {
-    const image = carouselImages[currentIndex];
-    modalImage.src = image.src;
-    modalImage.alt = image.alt;
-  }
-  function showNextImage() {
-    currentIndex = (currentIndex + 1) % carouselImages.length;
-    updateModalImage();
-  }
-  function showPrevImage() {
-    currentIndex =
-      (currentIndex - 1 + carouselImages.length) % carouselImages.length;
-    updateModalImage();
-  }
-
-  carouselImages.forEach((img, index) => {
-    img.addEventListener("click", () => openModal(index));
-  });
-  closeModalBtn.addEventListener("click", closeModal);
-  modalPrevBtn.addEventListener("click", showPrevImage);
-  modalNextBtn.addEventListener("click", showNextImage);
-  window.addEventListener("keydown", (e) => {
-    if (!modal.classList.contains("hidden")) {
-      if (e.key === "Escape") closeModal();
-      if (e.key === "ArrowRight") showNextImage();
-      if (e.key === "ArrowLeft") showPrevImage();
-    }
-  });
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeModal();
-  });
-}
-
 function initAccordion() {
   const accordionItems = document.querySelectorAll(".accordion-item");
 
@@ -223,6 +221,5 @@ export function initUI() {
   initTabs();
   populateServices();
   populateTestimonials();
-  initModalGallery();
   initAccordion();
 }
