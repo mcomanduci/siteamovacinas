@@ -179,6 +179,7 @@ function initAccordion() {
     const header = item.querySelector(".accordion-header");
     const content = item.querySelector(".accordion-content");
     const icon = item.querySelector(".accordion-icon");
+    const img = item.querySelector(".open-accordion");
 
     // Abre o primeiro item (Criança) por padrão
     if (index === 0) {
@@ -187,7 +188,10 @@ function initAccordion() {
       icon.style.transform = "rotate(180deg)";
     }
 
-    header.addEventListener("click", () => {
+    header.addEventListener("click", openAccordion);
+    img.addEventListener("click", openAccordion);
+
+    function openAccordion() {
       const isActive = item.classList.contains("accordion-item-active");
 
       // Fecha item
@@ -197,20 +201,12 @@ function initAccordion() {
         icon.style.transform = "rotate(0deg)";
       }
 
-      // Fecha todos os itens
-      // accordionItems.forEach((i) => {
-      //   i.classList.remove("accordion-item-active");
-      //   i.querySelector(".accordion-content").style.maxHeight = 0;
-      //   i.querySelector(".accordion-icon").style.transform = "rotate(0deg)";
-      // });
-
-      // Se o item clicado não estava ativo, abre ele
       if (!isActive) {
         item.classList.add("accordion-item-active");
         content.style.maxHeight = content.scrollHeight + "px";
         icon.style.transform = "rotate(180deg)";
       }
-    });
+    }
   });
 }
 
