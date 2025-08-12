@@ -151,113 +151,106 @@
       </section>
 
       <!-- A Clínica Section -->
-      <div class="relative">
-        <div
-          class="absolute inset-0 block bg-no-repeat bg-cover opacity-40 sm:opacity-50 lg:opacity-60"
-          style="background-image: url('./img/bg-02.png')"
-        ></div>
-
-        <section id="clinica" class="py-12 sm:py-16 lg:py-20">
-          <div class="container mx-auto px-4 sm:px-6 relative z-10">
-            <div
-              class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-20"
-            >
-              <!-- Text Content (moved first for mobile) -->
-              <div class="w-full lg:w-1/2 text-left order-1 lg:order-2">
-                <h2
-                  class="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-800 mb-4 sm:mb-6"
-                >
-                  Bem-vindo à AmoVacinas
-                </h2>
-                <p
-                  class="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
-                >
-                  Na Amo Vacinas, nossa missão é proteger o que há de mais
-                  valioso: a sua saúde e a de sua família. Oferecemos um serviço
-                  de vacinação completo e personalizado, com a comodidade do
-                  atendimento domiciliar e a segurança de uma equipe altamente
-                  qualificada.
-                </p>
-                <p
-                  class="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed"
-                >
-                  Entendemos que a vacinação pode ser um momento de ansiedade,
-                  por isso, criamos um ambiente e um serviço que priorizam o
-                  conforto e o bem-estar, utilizando técnicas e produtos que
-                  aliviam a dor e o desconforto. Além das vacinas, oferecemos
-                  uma gama de serviços pensados para facilitar sua rotina de
-                  cuidados.
-                </p>
-              </div>
-              <!-- Image Carousel (moved second for mobile) -->
-              <div class="w-full lg:w-1/2 order-2 lg:order-1">
+      <section id="clinica" class="py-12 sm:py-16 lg:py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6">
+          <div
+            class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-20"
+          >
+            <!-- Text Content (moved first for mobile) -->
+            <div class="w-full lg:w-1/2 text-left order-1 lg:order-2">
+              <h2
+                class="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-800 mb-4 sm:mb-6"
+              >
+                Bem-vindo à Amo<span class="text-pink-500">Vacinas</span>
+              </h2>
+              <p
+                class="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed"
+              >
+                Na Amo Vacinas, nossa missão é proteger o que há de mais
+                valioso: a sua saúde e a de sua família. Oferecemos um serviço
+                de vacinação completo e personalizado, com a comodidade do
+                atendimento domiciliar e a segurança de uma equipe altamente
+                qualificada.
+              </p>
+              <p
+                class="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed"
+              >
+                Entendemos que a vacinação pode ser um momento de ansiedade, por
+                isso, criamos um ambiente e um serviço que priorizam o conforto
+                e o bem-estar, utilizando técnicas e produtos que aliviam a dor
+                e o desconforto. Além das vacinas, oferecemos uma gama de
+                serviços pensados para facilitar sua rotina de cuidados.
+              </p>
+            </div>
+            <!-- Image Carousel (moved second for mobile) -->
+            <div class="w-full lg:w-1/2 order-2 lg:order-1">
+              <div
+                class="relative w-full max-w-2xl mx-auto"
+                id="clinic-carousel"
+              >
                 <div
-                  class="relative w-full max-w-2xl mx-auto"
-                  id="clinic-carousel"
+                  class="overflow-hidden relative h-48 sm:h-64 md:h-80 lg:h-96 rounded-2xl shadow-2xl bg-gray-200"
                 >
-                  <div
-                    class="overflow-hidden relative h-48 sm:h-64 md:h-80 lg:h-96 rounded-2xl shadow-2xl bg-gray-200"
-                  >
-                    <!-- Carousel items -->
-                    <div class="carousel-item absolute inset-0">
-                      <img
-                        loading="lazy"
-                        src="./img/Fotos-33.jpg"
-                        alt="Interior de uma clínica pediátrica moderna e acolhedora"
-                        class="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div class="carousel-item absolute inset-0 opacity-0">
-                      <img
-                        loading="lazy"
-                        src="./img/Fotos-28.jpg"
-                        alt="Recepção da clínica, limpa e organizada"
-                        class="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div class="carousel-item absolute inset-0 opacity-0">
-                      <img
-                        loading="lazy"
-                        src="./img/Fotos-14.jpg"
-                        alt="Enfermeira aplicando vacina em uma criança de forma gentil"
-                        class="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div class="carousel-item absolute inset-0 opacity-0">
-                      <img
-                        loading="lazy"
-                        src="./img/Fotos-40.jpg"
-                        alt="Enfermeira aplicando vacina em uma criança de forma gentil"
-                        class="w-full h-full object-cover"
-                      />
-                    </div>
+                  <!-- Carousel items -->
+                  <div class="carousel-item absolute inset-0">
+                    <img
+                      loading="lazy"
+                      src="./img/Fotos-33.jpg"
+                      alt="Interior de uma clínica pediátrica moderna e acolhedora"
+                      class="w-full h-full object-cover"
+                    />
                   </div>
-                  <!-- Prev/Next buttons -->
-                  <button
-                    id="prevBtn"
-                    class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 text-purple-700 p-2 sm:p-3 rounded-full shadow-md ml-1 sm:ml-2 transition-all"
-                  >
-                    <i
-                      data-lucide="chevron-left"
-                      class="h-4 w-4 sm:h-6 sm:w-6"
-                    ></i>
-                  </button>
-                  <button
-                    id="nextBtn"
-                    class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 text-purple-700 p-2 sm:p-3 rounded-full shadow-md mr-1 sm:mr-2 transition-all"
-                  >
-                    <i
-                      data-lucide="chevron-right"
-                      class="h-4 w-4 sm:h-6 sm:w-6"
-                    ></i>
-                  </button>
+                  <div class="carousel-item absolute inset-0 opacity-0">
+                    <img
+                      loading="lazy"
+                      src="./img/Fotos-28.jpg"
+                      alt="Recepção da clínica, limpa e organizada"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div class="carousel-item absolute inset-0 opacity-0">
+                    <img
+                      loading="lazy"
+                      src="./img/Fotos-14.jpg"
+                      alt="Enfermeira aplicando vacina em uma criança de forma gentil"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div class="carousel-item absolute inset-0 opacity-0">
+                    <img
+                      loading="lazy"
+                      src="./img/Fotos-40.jpg"
+                      alt="Enfermeira aplicando vacina em uma criança de forma gentil"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
+                <!-- Prev/Next buttons -->
+                <button
+                  id="prevBtn"
+                  class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 text-purple-700 p-2 sm:p-3 rounded-full shadow-md ml-1 sm:ml-2 transition-all"
+                >
+                  <i
+                    data-lucide="chevron-left"
+                    class="h-4 w-4 sm:h-6 sm:w-6"
+                  ></i>
+                </button>
+                <button
+                  id="nextBtn"
+                  class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-white/50 hover:bg-white/80 text-purple-700 p-2 sm:p-3 rounded-full shadow-md mr-1 sm:mr-2 transition-all"
+                >
+                  <i
+                    data-lucide="chevron-right"
+                    class="h-4 w-4 sm:h-6 sm:w-6"
+                  ></i>
+                </button>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- <section id="equipe" class="py-20 bg-purple-50">
+      <!-- <section id="equipe" class="py-20 bg-purple-50">
         <div class="container mx-auto px-6">
           <div
             class="flex flex-col lg:flex-row-reverse items-center gap-12 lg:gap-20"
@@ -291,117 +284,112 @@
         </div>
       </section> -->
 
-        <section id="equipe" class="py-12 lg:py-20">
-          <div class="container mx-auto px-6 relative z-10">
-            <div
-              class="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20"
-            >
-              <div class="lg:w-1/2">
-                <img
-                  src="./img/Fotos-48.jpg"
-                  alt="Profissional de saúde sorrindo para um paciente"
-                  class="rounded-2xl shadow-2xl w-full h-auto object-cover"
-                />
-              </div>
-              <div class="lg:w-1/2">
-                <div class="grid grid-cols-1 gap-x-6 gap-y-8">
-                  <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8 text-purple-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 class="text-lg font-semibold text-gray-900">
-                        Profissionais Qualificados
-                      </h3>
-                      <p class="mt-1 text-gray-600">
-                        Equipe formada por enfermeiros e técnicos com vasta
-                        experiência em imunização.
-                      </p>
-                    </div>
+      <section id="equipe" class="py-12 lg:py-20 bg-purple-50">
+        <div class="container mx-auto px-6">
+          <div
+            class="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20"
+          >
+            <div class="lg:w-1/2">
+              <img
+                src="./img/Fotos-48.jpg"
+                alt="Profissional de saúde sorrindo para um paciente"
+                class="rounded-2xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
+            <div class="lg:w-1/2">
+              <div class="grid grid-cols-1 gap-x-6 gap-y-8">
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 text-purple-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                      />
+                    </svg>
                   </div>
-
-                  <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8 text-purple-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 class="text-lg font-semibold text-gray-900">
-                        Atendimento Humanizado
-                      </h3>
-                      <p class="mt-1 text-gray-600">
-                        Cuidado, empatia e um sorriso que transforma a
-                        experiência de vacinar.
-                      </p>
-                    </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      Profissionais Qualificados
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      Equipe formada por enfermeiros e técnicos com vasta
+                      experiência em imunização.
+                    </p>
                   </div>
+                </div>
 
-                  <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8 text-purple-600"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944A12.02 12.02 0 0012 21a12.02 12.02 0 009-14.056z"
-                        />
-                      </svg>
-                    </div>
-                    <div>
-                      <h3 class="text-lg font-semibold text-gray-900">
-                        Conforto e Segurança
-                      </h3>
-                      <p class="mt-1 text-gray-600">
-                        Focamos em tornar a vacinação um momento tranquilo e
-                        totalmente seguro para você.
-                      </p>
-                    </div>
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 text-purple-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      Atendimento Humanizado
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      Cuidado, empatia e um sorriso que transforma a experiência
+                      de vacinar.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="flex-shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-8 w-8 text-purple-600"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 20.944A12.02 12.02 0 0012 21a12.02 12.02 0 009-14.056z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900">
+                      Conforto e Segurança
+                    </h3>
+                    <p class="mt-1 text-gray-600">
+                      Focamos em tornar a vacinação um momento tranquilo e
+                      totalmente seguro para você.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- Serviços Section -->
-      <section id="servicos" class="py-20 bg-white relative">
-        <div
-          class="absolute inset-0 block bg-no-repeat bg-cover opacity-40 sm:opacity-50 lg:opacity-60"
-          style="background-image: url('./img/base-8.png')"
-        ></div>
-        <div class="container mx-auto px-6 text-center relative z-10">
+      <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
           <h2 class="text-3xl font-bold text-purple-800 mb-12">
             Nossos Serviços
           </h2>
@@ -674,7 +662,7 @@
       >
         <div
           class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-50"
-          style="background-image: url('./img/bg-vacinacao1.png')"
+          style="background-image: url('./img/clouds.png')"
         ></div>
         <!-- <div class="relative z-10"></div> -->
         <div class="container mx-auto px-4 sm:px-6 relative z-20">
@@ -1004,12 +992,8 @@
       </section>
 
       <!-- Depoimentos Section -->
-      <section id="depoimentos" class="py-20 bg-white relative">
-        <div
-          class="absolute inset-0 block bg-no-repeat bg-cover opacity-40 sm:opacity-50 lg:opacity-60"
-          style="background-image: url('./img/bg-02.png')"
-        ></div>
-        <div class="container mx-auto px-6 relative z-10">
+      <section id="depoimentos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
           <div class="text-center">
             <h2 class="text-3xl font-bold text-purple-800 mb-12">
               O Que Nossos Clientes Dizem
@@ -1057,7 +1041,7 @@
       <!-- CTA Section -->
       <section id="cta" class="py-12 sm:py-16 lg:py-20 bg-black relative">
         <div
-          class="absolute inset-0 block bg-no-repeat opacity-40 bg-[50%] bg-cover"
+          class="absolute inset-0 block bg-no-repeat bg-bottom bg-cover opacity-40"
           style="background-image: url('./img/ursa.png')"
         ></div>
         <div
@@ -1190,7 +1174,7 @@
         </div>
       </div>
     </footer> -->
-    <footer class="bg-[#6527ac] text-gray-300">
+    <footer class="bg-gray-800 text-gray-300">
       <div class="container mx-auto px-6 py-12">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <!-- Coluna da Esquerda: Info e Contato -->

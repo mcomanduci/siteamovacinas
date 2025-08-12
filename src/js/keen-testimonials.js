@@ -23,15 +23,15 @@ export function initKeenTestimonials() {
         },
       },
       created(s) {
-        s.slides.forEach((sl) => sl.classList.add("opacity-40"));
-        s.slides[s.track.details.rel].classList.remove("opacity-40");
+        s.slides.forEach((sl) => sl.classList.add("opacity-70"));
+        s.slides[s.track.details.rel].classList.remove("opacity-70");
         if (keenSliderActive)
           keenSliderActive.innerText = s.track.details.rel + 1;
         if (keenSliderCount) keenSliderCount.innerText = s.slides.length;
       },
       slideChanged(s) {
-        s.slides.forEach((sl) => sl.classList.add("opacity-40"));
-        s.slides[s.track.details.rel].classList.remove("opacity-40");
+        s.slides.forEach((sl) => sl.classList.add("opacity-70"));
+        s.slides[s.track.details.rel].classList.remove("opacity-70");
         if (keenSliderActive)
           keenSliderActive.innerText = s.track.details.rel + 1;
       },
