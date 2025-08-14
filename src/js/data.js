@@ -19,7 +19,7 @@ export const servicesData = [
       "Compressa em gel para alívio da febre, dores de cabeça e dor local pós-vacina. Frescor imediato por até 8h.",
   },
   {
-    icon: "heart-pulse",
+    icon: "syringe",
     title: "Picadinha Mágica",
     description:
       "Dispositivo que sensibiliza os nervos da região e diminui a sensação de dor causada pela agulha.",

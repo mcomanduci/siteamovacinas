@@ -2,9 +2,9 @@
 
 export function createServiceCard(service) {
   return `
-		<div class="keen-slider__slide bg-purple-50 p-8 rounded-2xl text-left flex flex-col">
-			<div class="bg-pink-500 text-white w-14 h-14 rounded-xl flex items-center justify-center mb-4">
-				<i data-lucide="${service.icon}" class="w-8 h-8"></i>
+		<div class="keen-slider__slide bg-gray-50 p-8 rounded-2xl text-left flex flex-col shadow-xl">
+			<div class="bg-[#5E3B8C] text-white w-14 h-14 rounded-xl flex items-center justify-center mb-4">
+				<i data-lucide="${service.icon}" class="w-8 h-8 text-[#FFDBFD]"></i>
 			</div>
 			<h3 class="text-xl font-bold text-purple-800 mb-2">${service.title}</h3>
 			<p class="text-gray-600 flex-grow">${service.description}</p>

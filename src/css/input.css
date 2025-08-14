@@ -3,6 +3,16 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+p,
+footer a {
+  font-family: "Poppins", sans-serif;
+}
+
+p:not(footer p) {
+  color: #525252;
+}
+
 /* Custom scrollbar for better aesthetics */
 ::-webkit-scrollbar {
   width: 8px;
